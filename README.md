@@ -1,4 +1,5 @@
 # git.setup
+※自分用
 
 ```bash
 $ git --version
