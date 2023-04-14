@@ -6,20 +6,20 @@ $ git --version
 ($ sudo apt isntall git)
 
 $ git --version
-(versionがひょうじされればOK）
+(versionがひょうじされればOK)
 
 $ cd ~
 
 $ mkdir .ssh
 
 $ ssh-keygen -t rsa
-(適当にEnter連打）
+(適当にEnter連打)
 
 $ ls ./ssh
 id_rsa id_rsa.pub
 
 $ clip.exe < .ssh/id_rsa.pub
-(※これをgithub -> setting -> SSH and GPG keyのところに追加する）
+(※これをgithub -> setting -> SSH and GPG keyのところに追加する)
 
 $  cat << EOT >> .ssh/config
 Host github
