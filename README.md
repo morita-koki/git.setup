@@ -22,17 +22,14 @@ $ clip.exe < .ssh/id_rsa.pub
 (※これをgithub -> setting -> SSH and GPG keyのところに追加する)
 
 $  cat << EOT >> .ssh/config
-Host github
-	HostName github.com
+Host github.com
 	IdentityFile ~/.ssh/id_rsa
 	User git
 EOT
 
-$ ssh github
-PTY allocation request failed on channel 0
+$ ssh -T github.com
 Hi morita-koki! You've successfully authenticated, but GitHub does not provide shell access.
-Connection to github.com closed.
-(こんなのが表示されればOK。初回は変なの表示されるかも）
+(こんなのが表示されればOK。初回は変なの表示されるかも。うまく行かないときは、）
 
 $ git config --global user.name ${username} // githubのusername
 $ git config --global user.email ${email} // githubのemail
