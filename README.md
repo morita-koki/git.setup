@@ -29,7 +29,7 @@ EOT
 
 $ ssh -T github.com
 Hi morita-koki! You've successfully authenticated, but GitHub does not provide shell access.
-(こんなのが表示されればOK。初回は変なの表示されるかも。うまく行かないときは、）
+(こんなのが表示されればOK。初回は変なの表示されるかも。うまく行かないときは、ssh -vT github.com等でデバッグ）
 
 $ git config --global user.name ${username} // githubのusername
 $ git config --global user.email ${email} // githubのemail
