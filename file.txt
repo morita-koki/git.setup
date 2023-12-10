@@ -1,2 +1,3 @@
 this is the first commit from new PC
 this is the first commit from new PC
+this is the first commit from new PC; MacBook Pro
